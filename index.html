@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style></style>
   </head>
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top ">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card bebas-neue " >
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card bebas-neue ">
         <a href="#home" class="w3-bar-item w3-button" style="font-size: 2rem; font-weight: bolder;">
           <img src="images/logo-r.png" alt="" style="width: 40px;">
           <b>Web</b> Architects </a>
@@ -52,7 +53,7 @@
       <br>
       <div class="w3-row-padding  centered-row fade-in">
         <div class="w3-col l6 m6 w3-margin-bottom">
-          <p style="margin-top:100px; color: #b8e1dd;">Your website is like a first <span style="color: aliceblue;"> hand shake</span> with a new customer. Our web design agency excels at producing impressive designs with strategic insights to generate greater brand engagement, high conversions, & measurable results.  </p>
+          <p style="margin-top:100px; color: #b8e1dd;">Your website is like a first <span style="color: aliceblue;"> hand shake</span> with a new customer. Our web design agency excels at producing impressive designs with strategic insights to generate greater brand engagement, high conversions, & measurable results. </p>
           <p style="margin-top:0px; color: #b8e1dd;"> Taking small businesses Online!</p>
         </div>
         <div class="w3-col l5 m6 w3-margin-bottom slide-in-left">
@@ -141,27 +142,35 @@
             <div class="w3-content w3-padding" style="max-width:864px">
               <div class="w3-container w3-padding-32" id="contact">
                 <h3 class="w3-border-bottom bebas-neue w3-padding-16">Contact Us</h3>
+                <!-- Make sure to include Font Awesome in your <head> -->
+                <div class="contact" style="display: flex; gap: 20px; align-items: right;">
+                  <!-- Call Icon -->
+                  <a href="tel:+16464786515" title="(646) 478-6515" arget="_blank">
+                    <i class="fas fa-phone-alt"></i>
+                  </a>
+                  <!-- WhatsApp Icon -->
+                  <a href="https://wa.me/16464786515" title="Chat on WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <!-- Email Icon -->
+                  <a href="mailto:Thelesphore1@gmail.com" title="Thelesphore1@gmail.com" arget="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
                 <p>Lets get in touch and talk about your next project.</p>
-
-
                 <form name="contactwebArchitects" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit="submit" action="submitted.html">
-                    <input type="hidden" name="form-name" value="contactwebArchitects" />
-                    <p hidden>
-                      <label>Don’t fill this out: <input name="bot-field" /></label>
-                    </p>
-                  
-                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name">
-                    <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email" id="email">
-                    <input class="w3-input w3-section w3-border" type="tel" placeholder="Contact Number" required name="Number" id="number">
-                    <input class="w3-input w3-section w3-border" type="text" placeholder="Message" required name="Message" id="message">
-                  
-                    <button class="w3-button w3-black w3-section" type="submit">
-                      <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                  </form>
-
-
-
+                  <input type="hidden" name="form-name" value="contactwebArchitects" />
+                  <p hidden>
+                    <label>Don’t fill this out: <input name="bot-field" />
+                    </label>
+                  </p>
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name">
+                  <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email" id="email">
+                  <input class="w3-input w3-section w3-border" type="tel" placeholder="Contact Number" required name="Number" id="number">
+                  <input class="w3-input w3-section w3-border" type="text" placeholder="Message" required name="Message" id="message">
+                  <button class="w3-button w3-black w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+                </form>
               </div>
             </div>
           </div>
@@ -238,45 +247,37 @@
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-display-container"></div>
           <p id="p-footer" style="text-align: left; font-size: 1.3rem;">
-            <img src="images/logo-r.png" alt="loading" style="width: 100px;">
+            <img src="images/logo-r.png" alt="" style="width: 100px;">
             <br> The Web Architects <br>
             <i class="fa fa-map-marker w3-margin-right"></i>Ouagadougou, BF <br>
             <i class="fa fa-map-marker w3-margin-right"></i> Tennesse, USA <br>
-            <i class="fa fa-solid fa-phone w3-margin-right"></i> <a href=""> (646)-478-6515</a>
+            <i class="fa fa-solid fa-phone w3-margin-right"></i>
+            <a href=""> (646)-478-6515</a>
           </p>
           <p style="text-align: center;"></p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom fade-in slide-in-right">
           <div class="w3-display-container">
             <p id="p-footer" style="text-align: left; font-size: 1.3rem;">
-                <img src="images/logo-r.png" alt="" style="width: 100px;">
-                <br> Services <br>
-                Web-Desgin<br>
-                 Database-Management <br>
-                Active Follow up
-              </p>
+              <img src="images/logo-r.png" alt="" style="width: 100px;">
+              <br> Services <br> Web-Desgin <br> Database-Management <br> Active Follow up
+            </p>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom fade-in slide-in-right">
           <div class="w3-display-container">
             <p id="p-footer" style="text-align: left; font-size: 1.3rem;">
-                <img src="images/logo-r.png" alt="" style="width: 100px;">
-                <br> The Web Architects <br>
-                About Us <br>
-                Portfolio <br>
-                Case Studies
-              </p>
+              <img src="images/logo-r.png" alt="" style="width: 100px;">
+              <br> The Web Architects <br> About Us <br> Portfolio <br> Case Studies
+            </p>
           </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom fade-in slide-in-right">
           <div class="w3-display-container">
             <p id="p-footer" style="text-align: left; font-size: 1.3rem;">
-                <img src="images/logo-r.png" alt="" style="width: 100px;">
-                <br> The Web Architects <br>
-                Policies <br>
-                Terms of Use <br>
-                Privacy Policy
-              </p>
+              <img src="images/logo-r.png" alt="" style="width: 100px;">
+              <br> The Web Architects <br> Policies <br> Terms of Use <br> Privacy Policy
+            </p>
           </div>
         </div>
       </div>
@@ -291,6 +292,5 @@
     </footer>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   </body>
 </html>
