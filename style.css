@@ -319,6 +319,14 @@
   .w3-card-4-1 p {
     font-size: 1.5rem;
   }
+  .contact a{
+    font-size: 30px;
+   }
+ .contact a:hover{
+  color: var(--yellow2);
+  font-size: 30px;
+  transform: scale(1.5);
+ }
   
   @media (max-width: 768px) {
     .w3-container-inside1 p,
