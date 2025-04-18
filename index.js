@@ -49,7 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("progressBar").style.width = scrolled + "%";
   });
 
-
+ window.addEventListener('scroll', function () {
+    // If the user scrolls horizontally
+    if (window.scrollX !== 0) {
+      // Instantly scroll back to the left edge
+      window.scrollTo(0, window.scrollY);
+    }
+  });
 
 
 
