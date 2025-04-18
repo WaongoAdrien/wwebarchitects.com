@@ -105,7 +105,13 @@
     background-color: #f5fff7;
     color: #2f4f4f;
   }
+  * {
+    box-sizing: border-box;
+  }
   
+  html, body {
+    overflow-x: hidden;
+  }
   /* Navbar customization */
   
   .w3-top .w3-bar {
@@ -163,6 +169,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    background: linear-gradient(
+      var(--blue),
+      var(--yellow2)
+    ); /* Top to bottom gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
     font-weight: bold;
   }
   
@@ -319,6 +336,7 @@
   .w3-card-4-1 p {
     font-size: 1.5rem;
   }
+
   .contact a{
     font-size: 30px;
     background-color: var(--blue);
@@ -326,11 +344,11 @@
     padding: 15px;
     color: var(--yellow2);
    }
-  .contact a:hover{
-   color: var(--yellow2);
-   font-size: 30px;
-   transform: scale(1.2);
-  }
+ .contact a:hover{
+  color: var(--yellow2);
+  font-size: 30px;
+  transform: scale(1.2);
+ }
   @media (max-width: 768px) {
     .w3-container-inside1 p,
     .w3-container-inside2 p {
