@@ -559,7 +559,8 @@
     }
   
     .background {
-      height: 40vh;
+      height: 100vh;
+      margin-top:12px;
     }
   }
   
@@ -574,9 +575,7 @@
       margin-bottom: 40px;
     }
    
-    .background{
-      display: none;
-    }
+
     .w3-row.centered-row.fade-in {
       justify-content: space-between;
     }
