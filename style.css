@@ -428,6 +428,10 @@
     #progressBar {
       height: 4px;
     }
+    .w3-display-middle h1 span {
+      background: none !important;
+      font-size: 3rem;
+    }
   }
   
   /* Animation base */
