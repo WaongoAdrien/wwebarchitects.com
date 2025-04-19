@@ -199,7 +199,9 @@
   }
   .w3-display-middle {
     background: none !important;
+    font-size: 6rem;
   }
+
   
   /* Buttons */
   .w3-button {
@@ -432,6 +434,16 @@
       background: none !important;
       font-size: 3rem;
     }
+    .w3-content #p-footer{
+      text-align: center !important;
+    }
+    .w3-col img {
+      display: block;              /* Make image a block-level element */
+      margin-left: auto;           /* Auto margin on the left */
+      margin-right: auto;          /* Auto margin on the right */
+      max-width: 100% !important;
+      height: auto !important;
+    }
   }
   
   /* Animation base */
@@ -471,3 +483,134 @@
     transform: translateX(0);
   }
 
+
+
+
+
+
+
+
+  @media screen and (orientation: landscape) {
+    .w3-container-inside1 p,
+    .w3-container-inside2 p {
+      width: 50%;
+      padding: 30px;
+      font-size: 1.5rem;
+    }
+  
+    .w3-container-inside1,
+    .w3-container-inside2 {
+      font-size: 1.6rem;
+      padding: 20px;
+      justify-content: space-between;
+    }
+  
+    .wave-container .content {
+      padding: 60px;
+      font-size: 1.5rem;
+    }
+  
+    .wave-container .content h4 {
+      font-size: 3rem;
+    }
+  
+    .video-wrappera {
+      height: 50vh;
+    }
+  
+    h3 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  
+    .centered-row {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .w3-bar .w3-button {
+      font-size: 1.3rem;
+      padding: 10px;
+    }
+  
+    .w3-containerabout {
+      padding: 24px;
+      margin-bottom: 80px;
+    }
+  
+    .w3-col, .w3-col1 {
+      max-width: 100%;
+      padding: 12px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  
+    .w3-col p, .w3-col1 p {
+      font-size: 1.6rem;
+    }
+  
+    .w3-card-4, .w3-card-4-1 {
+      min-height: 35vh;
+    }
+  
+    .contact a {
+      font-size: 28px;
+      padding: 12px;
+    }
+  
+    .background {
+      height: 40vh;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    #projects {
+      padding: 60px 20px;
+    }
+  
+    #projects h3 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+   
+    .background{
+      display: none;
+    }
+    .w3-row.centered-row.fade-in {
+      justify-content: space-between;
+    }
+  
+    .w3-col.l6, .w3-col.l5 {
+      width: 48%;
+      max-width: 100%;
+    }
+  
+    .w3-col p {
+      font-size: 1.4rem;
+      margin-top: 60px;
+    }
+  
+    .w3-col img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  
+    footer .w3-col {
+      width: 23%;
+      max-width: 23%;
+      padding: 0 10px;
+    }
+  
+    #p-footer {
+      font-size: 1.2rem !important;
+      text-align: left;
+    }
+  
+    footer .w3-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  
