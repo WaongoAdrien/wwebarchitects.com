@@ -10,101 +10,6 @@
     --dark-blue: #1a2e3a;
     --white-smoke: #f9f9f9;
   }
-  
-  .centered-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  
-  #progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background: var(--yellow2);
-    padding: 2px;
-    width: 0%;
-    z-index: 9999;
-  }
-  
-  .background {
-    background-image: url("images/backgroundImg.png");
-    height: 50vh;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 12px;
-    max-width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-  }
-  .video-wrappera {
-    position: relative;
-    width: 100%;
-    height: 70vh; /* Adjust as needed */
-    overflow: hidden;
-    border-radius: 4px;
-  }
-  
-  .w3-container1 {
-    background-color: var(--blue);
-  }
-  
-  .w3-container-inside1 {
-    background-color: var(--blue);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* optional spacing between the paragraphs */
-    max-width: 1400px;
-    font-size: 1.6rem;
-  }
-  
-  .w3-container-inside1 p {
-    color: var(--mint);
-    flex: 1;
-    width: 50%;
-    margin: 6px; /* remove default margins if needed */
-    padding: 50px;
-  }
-  
-  .w3-container2 {
-    background-image: linear-gradient(to bottom, var(--blue), var(--yellow));
-  }
-  
-  .w3-container-inside2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* optional spacing between the paragraphs */
-    max-width: 1400px;
-    font-size: 1.6rem;
-  }
-  
-  .w3-container-inside2 p {
-    flex: 1;
-    width: 50%;
-    margin: 6px; /* remove default margins if needed */
-    padding: 50px;
-    color: var(--mint);
-  }
-  
-  .w3-container-inside2 p:hover {
-    flex: 1;
-    width: 50%;
-    margin: 6px; /* remove default margins if needed */
-    padding: 50px;
-    transform: scaley(1.1);
-  }
-  
-  /* Base theme */
-  body {
-    font-family: "Times New Roman", Times, serif;
-    background-color: #f5fff7;
-    color: #2f4f4f;
-  }
   * {
     box-sizing: border-box;
   }
@@ -112,140 +17,133 @@
   html, body {
     overflow-x: hidden;
   }
-  /* Navbar customization */
-  
-  .w3-top .w3-bar {
-    background-color: var(--blue) !important;
-    border-bottom: 2px solid var(--yellow);
-    padding: 12px;
+
+  .bebas-neue {
+    font-family: "Bebas Neue", cursive;
   }
-  .w3-bar .w3-button {
-    padding: 8px;
-    background-color: var(--blue) !important;
-    color: var(--yellow) !important;
-    font-size: 1.4rem;
-    transform: translateY(-5px);
+
+  body{
+    font-family: 'Times New Roman', Times, serif !important;
   }
-  .w3-bar .w3-button:hover {
-    opacity: 0.8;
-    background-color: var(--yellow2) !important;
-    color: var(--blue) !important;
-  }
-  
-  .w3-center {
-    background-color: var(--blue) !important;
-    border-bottom: 2px solid var(--yellow);
-    color: var(--yellow2);
-  }
-  .w3-center .p1 {
-    color: var(--yellow2);
-  }
-  .w3-center .p2 {
-    color: var(--blue);
-  }
-  .blended-img {
-    width: 100%;
+
+  .gif-box img {
+    width: 300px;
+    height: auto;
+    image-rendering: auto;
     mix-blend-mode: multiply;
   }
-  /* Header overlay text */
+
+
+  .video-wrappera {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  
+  /* This makes sure the text appears above the video */
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+
+  /* Ensure video fills container without distortion */
+  .video-wrappera video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+
   header h1 span {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 12px 24px;
     border-radius: 6px;
     color: var(--yellow2);
   }
-  
-  /* Section headings */
-  /* Add this class to use Bebas Neue font */
-  .bebas-neue {
-    font-family: "Bebas Neue", cursive;
-  }
-  
-  h3 {
-    background: linear-gradient(
-      var(--blue),
-      var(--yellow2)
-    ); /* Top to bottom gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4rem;
-    font-weight: bold;
+
+ p{
+    font-size: 1.3rem !important;
+    font-weight: lighter !important;
   }
 
-  h4 {
+  @media (max-width: 913px) {
+    header h1 span {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 0px;
+        border-radius: 6px;
+        color: var(--yellow2);
+        font-size:4rem;
+        text-align: center;
+      }
+    .w3-card-4 img{
+        width: 120px !important;
+        margin-top: 20px;
+    }
+ 
+}
+    
+  .background {
+    background-image: url("images/backgroundImg.png");
+    height: 50vh;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 0px;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+
+  .color-bb-fy{
+    background-color: var(--blue) !important;
+    color: var(--yellow2) !important;
+  }
+
+  .color-bt{
+    background-color: var(--mint) !important;
+  
+  }
+  .min-h{
+    min-height: 45vh;
+    height: auto;
+  }
+
+  .max-h{
+    max-height: 40vh;
+    height: auto;
+  }
+
+  .vertical-center{   
+        display: flex;
+        justify-content: center;   /* Center horizontally */
+        align-items: center;       /* Center vertically */
+        height: 100vh;             /* Or any specific height */   
+  }
+    
+  h2 {
     background: linear-gradient(
       var(--blue),
       var(--yellow2)
     ); /* Top to bottom gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .w3-display-topleft {
-    background-color: var(--blue);
-    color: var(--yellow2);
-  }
-  
-  /* Image hover effect */
-  .w3-display-container img {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    border-radius: 6px;
-  }
-  .w3-display-container:hover img {
-    transform: scale(1.03);
-    box-shadow: 0 12px 20px rgba(10, 6, 81, 0.3);
-  }
-  .w3-display-middle {
-    background: none !important;
     font-size: 6rem;
+    font-weight: bold !important;
   }
 
-  
-  /* Buttons */
-  .w3-button {
-    background-color: var(--blue) !important;
-    color: var(--yellow2) !important;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .w3-button:hover {
-    background-color: var(--blue) !important;
-    color: var(--yellow2) !important;
-    opacity: 0.8;
-    transform: translateY(-2px);
-  }
-  
-  .w3-containerabout {
-    background-color: var(--blue);
-  
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 120px;
-  }
-  .w3-containerabout p {
-    color: var(--yellow2);
-    font-size: 1.5rem;
-  }
-  
-  /* Contact form inputs */
-  input.w3-input {
-    border-radius: 4px;
-    border: 1px solid var(--yellow);
-  }
-  input.w3-input:focus {
-    border-color: var(--yellow);
-    box-shadow: 0 0 5px var(--yellow);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #2f4f4f !important;
-    color: #dff0d8 !important;
-  }
-  
-
-  
   .wave-container {
     position: relative;
     background: linear-gradient(to bottom, var(--blue), var(--yellow2));
@@ -254,17 +152,17 @@
   }
   
   .wave-container .content {
-    padding: 100px;
+    padding: 60px;
     position: relative;
     z-index: 1;
     margin-bottom: 172px;
     text-align: center;
     color: var(--mint);
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   .wave-container .content h4 {
     color: var(--mint);
-    font-size: 6rem;
+    font-size: 3rem;
     margin-top: 0px;
   }
   
@@ -274,72 +172,6 @@
     left: 0;
     width: 100%;
     height: 300px;
-  }
-  
-  hr {
-    border: none;
-    height: 12px;
-    background: linear-gradient(to right, var(--blue), var(--yellow2));
-    border-radius: 4px;
-    width: 90%;
-    margin: 2rem auto;
-  }
-  .hr1 {
-    border: none;
-    height: 12px;
-    background: linear-gradient(to right, var(--blue), var(--yellow2));
-    border-radius: 4px;
-    width: 10%;
-    margin: 2rem auto;
-  }
-  
-  .w3-col1 img {
-    mix-blend-mode: multiply;
-    max-width: 100%;
-  }
-  
-  .w3-col1 {
-    max-width: 100%;
-  }
-  .w3-col1 p {
-    font-size: 1.8rem;
-  }
-  .w3-col {
-    max-width: 800px;
-  }
-  .w3-col p {
-    font-size: 1.5rem;
-  }
-  .w3-col1 {
-    background-color: var(--mint1);
-    border-radius: 10px;
-    width: 100%;
-  }
-  .background {
-      height: 50vh;
-    }
-  
-  .w3-card-4 {
-    background-color: var(--blue);
-    color: var(--yellow2);
-    border-radius: 5px;
-    min-height: 40vh;
-  }
-  .w3-card-4-1 {
-    background-color: var(--yellow2);
-    color: var(--dark-blue);
-    border-radius: 5px;
-    min-height: 40vh;
-  }
-  .no-shadow {
-    box-shadow: none !important;
-  }
-  
-  .w3-card-4 p {
-    font-size: 1.5rem;
-  }
-  .w3-card-4-1 p {
-    font-size: 1.5rem;
   }
 
   .contact a{
@@ -354,142 +186,68 @@
   font-size: 30px;
   transform: scale(1.2);
  }
-  @media (max-width: 768px) {
-    .w3-container-inside1 p,
-    .w3-container-inside2 p {
-      width: 100%;
-      padding: 10px;
-      font-size: 1.4rem;
-    }
-  
-    .w3-container-inside1,
-    .w3-container-inside2 {
-      font-size: 1.5rem;
-      padding: 10px;
-    }
-  
-    .wave-container .content {
-      padding: 40px 20px;
-      font-size: 1.2rem;
-    }
-  
-    .wave-container .content h4 {
-      font-size: 2.2rem;
-    }
-  
-    .video-wrappera {
-      height: 60vh;
-    }
-  
-    h3 {
-      font-size: 2.8rem;
-      text-align: center;
-    }
-  
-    .centered-row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .w3-bar .w3-button {
-      padding: 12px;
-      font-size: 1.1rem;
-    }
-  
-    .w3-containerabout {
-      padding: 16px;
-      margin-bottom: 60px;
-    }
-  
-    .w3-col {
-      max-width: 100%;
-      padding: 10px;
-    }
-  
-    .w3-col1 {
-      padding: 10px;
-    }
-    .w3-col p {
-      font-size: 1.4rem;
-    }
-    header h1 span {
-      font-size: 1.2rem;
-      padding: 10px;
-    }
-  
-    .w3-display-container img {
-      width: 90%;
-      height: auto;
-    }
-  
-    .wave {
-      height: 150px;
-    }
-  
-    input.w3-input {
-      width: 100%;
-    }
-  
-    #progressBar {
-      height: 4px;
-    }
-    .w3-display-middle h1 span {
-      background: none !important;
-      font-size: 3rem;
-    }
-    .w3-content #p-footer{
-      text-align: center !important;
-    }
-    .w3-col img {
-      display: block;              /* Make image a block-level element */
-      margin-left: auto;           /* Auto margin on the left */
-      margin-right: auto;          /* Auto margin on the right */
-      max-width: 100% !important;
-      height: auto !important;
-    }
+
+ .card-2 {
+    background-color: var(--blue);
+    color: var(--yellow2);
+    border-radius: 5px;
+    min-height: 40vh;
+  }
+  .card-1 {
+    background-color: var(--yellow2);
+    color: var(--dark-blue);
+    border-radius: 5px;
+    min-height: 40vh;
+  }
+  .no-shadow {
+    box-shadow: none !important;
   }
   
-  /* Animation base */
-  .fade-in,
-  .slide-in-left,
-  .slide-in-right {
-    opacity: 0;
-    transition: all 2s ease-out;
-    will-change: opacity, transform;
+  .card-1 p {
+    font-size: 1.3rem;
   }
-  
-  .visible {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  
-  /* Fade-in (defaults to slight Y offset) */
-  .fade-in {
-    transform: translateY(30px);
-  }
-  
-  /* Slide from left */
-  .slide-in-left {
-    transform: translateX(-800px);
-  }
-  
-  .slide-in-left.visible {
-    transform: translateX(0);
-  }
-  
-  /* Slide from right */
-  .slide-in-right {
-    transform: translateX(800px);
-  }
-  
-  .slide-in-right.visible {
-    transform: translateX(0);
+  .card-2 p {
+    font-size: 1.3rem;
   }
 
 
 
-
-
-
-
-  
+   /* Animation base */
+   .fade-in,
+   .slide-in-left,
+   .slide-in-right {
+     opacity: 0;
+     transition: all 1.5s ease-out;
+     will-change: opacity, transform;
+   }
+   
+   .visible {
+     opacity: 1;
+     transform: translate(0, 0);
+   }
+   
+   /* Fade-in (defaults to slight Y offset) */
+   .fade-in {
+     transform: translateY(30px);
+   }
+   
+   /* Slide from left */
+   .slide-in-left {
+     transform: translateX(-800px);
+   }
+   
+   .slide-in-left.visible {
+     transform: translateX(0);
+   }
+   
+   /* Slide from right */
+   .slide-in-right {
+     transform: translateX(800px);
+   }
+   
+   .slide-in-right.visible {
+     transform: translateX(0);
+   }
+ 
+ 
+ 
